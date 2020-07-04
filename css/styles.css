@@ -102,8 +102,9 @@ h1,h2,h3,h4,h5,h6,p{
   color:var(--accent-color);
 }
 
+
 .site-nav .link{
-  display: block;
+  display: inline-block;
   padding-top: 30px;
   padding-bottom: 30px;
   color:var(--main-color);
@@ -114,6 +115,7 @@ h1,h2,h3,h4,h5,h6,p{
   letter-spacing: 0.02em;
   text-decoration: none;
   position: relative;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 
  }
 
@@ -125,10 +127,7 @@ h1,h2,h3,h4,h5,h6,p{
   bottom: 0;
   left: 0;
   width: 100%;
-  
   border:2px solid var(--accent-color); 
-  border-radius: 2px;
-  
 }
 
 
@@ -136,22 +135,6 @@ h1,h2,h3,h4,h5,h6,p{
 .site-nav .link:focus {
   color:var(--accent-color);
 }
-
-
-.site-nav .link:hover::after{
-  content:"";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  border:2px solid var(--accent-color); 
-  border-radius: 2px;
-
-  
-}
-
-
 
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -169,11 +152,6 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* ---------------------------------------------------start address---------------------------------------------------------------- */
 
-.container-address{
-  display: flex;
-}
-
-
 .address a{
   display: flex;
   align-items: center;
@@ -187,6 +165,7 @@ h1,h2,h3,h4,h5,h6,p{
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .icon-mail{ 
@@ -284,6 +263,8 @@ align-items: center;
   text-decoration: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
+
  }
 
 
@@ -380,7 +361,7 @@ align-items: center;
 .container.do-work{
   padding-top: 94px ;
   padding-bottom: 94px;
-  font-family: Roboto;
+  font-family: var(--font-text);
   font-style: normal;
 }
 
@@ -507,6 +488,7 @@ align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .instagram,
@@ -516,6 +498,7 @@ align-items: center;
   width: 20px;
   height: 20px;
   fill:#afb1b8;
+   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .social a:hover,
@@ -559,9 +542,11 @@ fill:var(--primary-white-color);
   border-radius: 4px;
   width: 170px;
   height: 90px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
  .client{
   fill:#afb1b8;
+   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .regular-custumers:hover,
@@ -622,6 +607,7 @@ fill:var(--primary-white-color);
   padding-bottom: 6px;
   border-radius: 4px;
   border-color: transparent;
+  
 }
 
 .flex-button .list{
@@ -733,9 +719,8 @@ fill:var(--primary-white-color);
 }
 
 .flex-style .list:hover .container-position{
-  transform:translateY(0);
-  transition-timing-function: ease-in;
-  transition: 2000ms;
+ transform:translateY(0);
+ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
 }
 
@@ -801,6 +786,8 @@ fill:var(--primary-white-color);
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .address-footer a:hover,
@@ -835,6 +822,7 @@ fill:var(--primary-white-color);
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-links a:hover,
